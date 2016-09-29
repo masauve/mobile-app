@@ -24,7 +24,7 @@ export class SelfieComponent {
   canUpload: boolean = false;
   scoreIncrement: number = 500;
   pointsAwarded: boolean = false;
-  uploadUrl: string = (environment.production) ? 'http://player-id-server-demo.apps-test.redhatkeynote.com/upload' : 'http://localhost:8085/upload';
+  uploadUrl: string = (environment.production) ? 'http://player-id-server-rhsummit.demo.ose3sandbox.com/upload' : 'http://localhost:8085/upload';
 
   constructor(private http: Http, private gameService: GameService, private elementRef: ElementRef) {}
 

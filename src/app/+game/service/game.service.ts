@@ -46,7 +46,7 @@ export class GameService {
     gold: 'golden'
   };
   configuration: Object = {};
-  socketUrl: string = (environment.production) ? 'ws://gamebus-production-demo.demo.ose3sandbox.com//game' : 'ws://localhost:9001/game';
+  socketUrl: string = (environment.production) ? 'ws://gamebus-production-rhsummit.demo.ose3sandbox.com//game' : 'ws://localhost:9001/game';
 
   @Output() stateChange = new EventEmitter();
   @Output() configurationChange = new EventEmitter();
